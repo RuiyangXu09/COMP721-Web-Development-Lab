@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Search System</title>
+    <script type="text/javascript" src="xhr.js"></script>
+    <script type="text/javascript" src="Ajax.js"></script>
+</head>
+<body>
+<h1>Email Address Searching System</h1>
+
+<form>
+    <label>User Name: <input type="text" name="nameField"></label><br>
+    <label>Password: <input type="text" name="passwordField"></label><br>
+    <input type="button" name="submit" onclick="getData('matchEmail.php', 'targetDiv', nameField.value, passwordField.value)" value="Search from server">
+</form>
+
+<div id="targetDiv">
+    <p>
+        Email Address:
+    </p>
+</div>
+</body>
+</html>
